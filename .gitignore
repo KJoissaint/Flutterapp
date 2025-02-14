@@ -1,0 +1,43 @@
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+android/.gradle/
+android/app/*.keystore
+
+# iOS/macOS specific
+ios/Pods/
+ios/.symlinks/
+ios/.generated/
+macos/Pods/
+macos/.symlinks/
+macos/.generated/
+xcuserdata/
+DerivedData/
+
+# VS Code settings
+.vscode/
+
+# JetBrains IDEs (Android Studio, IntelliJ)
+.idea/
+*.iml
+
+# Logs & temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.swn
+
+# Linux & Windows build
+linux/flutter/
+windows/flutter/
+
+# Firebase & sensitive keys
+*.key.json
+google-services.json
+firebase_options.dart
