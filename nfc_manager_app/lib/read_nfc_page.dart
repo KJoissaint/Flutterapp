@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ReadNfcPage extends StatelessWidget {
+  const ReadNfcPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

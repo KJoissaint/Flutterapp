@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'read_nfc_page.dart';
+import 'test.dart';
 
 void main() {
   runApp(NfcManagerApp());
@@ -13,7 +14,7 @@ class NfcManagerApp extends StatefulWidget {
 
 class _NfcManagerAppState extends State<NfcManagerApp> {
   int _selectedIndex = 0;
-  final List<Widget> _pages = [HomePage(), ReadNfcPage()];
+  final List<Widget> _pages = [HomePage(), ReadNfcPage(),  Test()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -32,9 +33,9 @@ class _NfcManagerAppState extends State<NfcManagerApp> {
             Padding(
               padding: EdgeInsets.only(right: 16.0),
               child: CircleAvatar(
-                backgroundImage: AssetImage(
-                  "assets/profile.png",
-                ), // Add this image to your assets
+                // backgroundImage: AssetImage(
+                //   "assets/profile.png",
+                // ), 
               ),
             ),
           ],
@@ -46,6 +47,7 @@ class _NfcManagerAppState extends State<NfcManagerApp> {
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.nfc), label: "Read NFC"),
+            BottomNavigationBarItem(icon: Icon(Icons.facebook), label: "test"),
           ],
         ),
       ),
